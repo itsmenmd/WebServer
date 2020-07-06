@@ -1,0 +1,411 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather Forecast</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Regular Weather Report template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="stylesheets/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
+<link href='//fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!-- //web font -->
+<!-- js -->
+<script src="javascripts/jquery-1.9.1.min.js"></script> 
+<script src="javascripts/owl.carousel.js"></script>
+<script>
+	$(document).ready(function() { 
+		$("#owl-demo").owlCarousel({
+	 
+		  autoPlay: 3000, //Set AutoPlay to 3 seconds
+	 
+		  items : 6,
+		  itemsDesktop : [640,5],
+		  itemsDesktopSmall : [414,4]
+	 
+		});
+	 
+	}); 
+</script> 
+<!-- //js -->
+</head>
+<body onload="startTime()">
+	<!-- main -->
+	<div class="main">
+		<h1>Weather Forecast</h1>
+		<div class="main-wthree-row">
+			<div id="agileits-top">
+				<div class="agileinfo-top-row">
+					<div class="agileinfo-top-img">
+						<span id="imagenow2"> </span>
+					</div>
+					<h3><fon id="tempnow"></fon><sup class="degree">°</sup><span>C</span></h3>
+					<p>Humidity: <span id="humnow"></span>%</p>
+					
+					<div class="agileinfo-top-time"> 
+						<div class="date-time">
+							<p>HÀ NỘI</p>
+							<div class="dmy">
+								<div id="txt"></div>
+								<div class="date">
+									<!-- Date-JavaScript -->
+									<script type="text/javascript">
+									var mydate=new Date()
+									var year=mydate.getYear()
+									if(year<1000)
+									year+=1900
+									var day=mydate.getDay()
+									var month=mydate.getMonth()
+									var daym=mydate.getDate()
+									if(daym<10)
+									daym="0"+daym
+									var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+									var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+									document.write(""+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"")
+									</script>
+									<!-- //Date-JavaScript -->
+								</div>
+							</div> 
+							<div class="clear"></div>
+						</div>  
+					</div>
+				</div>
+			</div>
+			<div class="w3ls-bottom">
+				<h2>Today's Weather </h2>
+				<div id="owl-demo" class="owl-carousel owl-theme">
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour1"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="1hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour2"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="2hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour3"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="3hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour4"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="4hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour5"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="5hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour6"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="6hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour7"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="7hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour8"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="8hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour9"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="9hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour10"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="10hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour11"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="11hour"></span><span>°</span>
+						</div>
+					</div> 
+					<div class="item">
+						<div class="biseller-column">
+							<p id="hour12"></p>
+							<a class="lightbox" href="#">
+								<div class="imageWeather"></div>
+							</a> 
+							<span id="12hour"></span><span>°</span>
+						</div>
+					</div> 
+				</div>  
+			</div>
+			<div class="w3ls-bottom2">	 
+				<div class="ac-container">
+					<input id="ac-1" name="accordion-1" type="checkbox" />
+					<label for="ac-1" class="grid1"> Week</label>
+					<article class="ac-small">
+						<div class="wthree-grids">
+							<div class="wthree-grids-row">
+								<ul class="top">
+									<li id="day1"></li>
+									<li class="wthree-temp"> <span id="1min"></span> <sup class="degree">°</sup></li>
+									<li class="wthree-temp"> <span id="1max"></span> <sup class="degree">°</sup></li> 
+								</ul> 
+								<div class="clear"> </div>
+							</div>
+							<div class="wthree-grids-row">
+								<ul>
+									<li id="day2"></li>
+									<li class="wthree-temp"> <span id="2min"></span> <sup class="degree">°</sup></li>
+									<li class="wthree-temp"> <span id="2max"></span> <sup class="degree">°</sup></li> 
+								</ul>
+								<div class="clear"> </div>
+							</div>
+							<div class="wthree-grids-row">
+								<ul>
+									<li id="day3"></li>
+									<li class="wthree-temp"> <span id="3min"></span> <sup class="degree">°</sup></li>
+									<li class="wthree-temp"> <span id="3max"></span> <sup class="degree">°</sup></li> 
+								</ul> 
+								<div class="clear"> </div>
+							</div>
+							<div class="wthree-grids-row">
+								<ul>
+									<li id="day4"></li>
+									<li class="wthree-temp"> <span id="4min"></span> <sup class="degree">°</sup></li>
+									<li class="wthree-temp"> <span id="4max"></span> <sup class="degree">°</sup></li> 
+								</ul>
+								<div class="clear"> </div>
+							</div>
+							<div class="wthree-grids-row">
+								<ul>
+									<li id="day5"></li>
+									<li class="wthree-temp"> <span id="5min"></span> <sup class="degree">°</sup></li>
+									<li class="wthree-temp"> <span id="5max"></span> <sup class="degree">°</sup></li> 
+								</ul> 
+								<div class="clear"> </div>
+							</div>
+							<div class="wthree-grids-row">
+								<ul>
+									<li id="day6"></li>
+									<li class="wthree-temp"> <span id="6min"></span> <sup class="degree">°</sup></li>
+									<li class="wthree-temp"> <span id="6max"></span> <sup class="degree">°</sup></li> 
+								</ul> 
+								<div class="clear"> </div>
+							</div>
+							<div class="wthree-grids-row">
+								<ul>
+									<li id="day7"></li>
+									<li class="wthree-temp"> <span id="7min"></span> <sup class="degree">°</sup></li>
+									<li class="wthree-temp"> <span id="7max"></span> <sup class="degree">°</sup></li> 
+								</ul> 
+								<div class="clear"> </div>
+							</div>
+						</div>
+					</article>
+				</div>  
+			</div>	
+		</div>	
+	</div>	
+	<!-- //main --> 
+	<!-- copyright -->
+	<div class="copyright">
+		<p> © Dinh Thai Duong - B15DCDT048 - D15DTMT02</p>
+	</div>
+	<!-- //copyright --> 
+	<!-- Time-JavaScript -->
+	<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML =
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+			if (i < 10) {i = "0" + i}; // add zero in front of numbers < 10
+			return i;
+		}
+	
+	// <!-- //Time-JavaScript -->
+		
+        setInterval(function(){ 
+			$.getJSON( "/api/datanow", function(a) {
+				$('#tempnow').text(a.temp);
+				$('#humnow').text(a.hump);
+				timeNow = new Date();
+				timeNow = timeNow.getHours();
+				if(a.ww==0) {
+					if (timeNow<18 && timeNow>=6){
+						document.getElementById('agileits-top').style.backgroundImage = "url(images/a.jpg)";
+						document.getElementById("imagenow2").innerHTML = "<img src=\'images/5.png\'>";
+					} else {
+						document.getElementById('agileits-top').style.backgroundImage = "url(images/an.jpg)";
+						document.getElementById("imagenow2").innerHTML = "<img src=\'images/5n.png\'>";	
+					}
+				}
+				else if(a.ww==2) {
+					document.getElementById('agileits-top').style.backgroundImage = "url(images/b.jpg)";
+					document.getElementById("imagenow2").innerHTML = "<img src=\'images/7r.png\'>";
+				}
+			});       
+            $.getJSON( "/api/prediction", function(a) {
+				$('#1hour').text(a.hour1);
+                $('#2hour').text(a.hour2);
+                $('#3hour').text(a.hour3);
+				$('#4hour').text(a.hour4);
+				$('#5hour').text(a.hour5);
+				$('#6hour').text(a.hour6);
+				$('#7hour').text(a.hour7);
+				$('#8hour').text(a.hour8);
+				$('#9hour').text(a.hour9);
+				$('#10hour').text(a.hour10);
+				$('#11hour').text(a.hour11);
+				$('#12hour').text(a.hour12);
+                // var temp = document.getElementById('temp1');
+                // var hum = document.getElementById('hum1');
+                // var light = document.getElementById('light1');
+                // var dust = document.getElementById('dust1');
+			});
+			$.getJSON( "/api/maxtemp", function(a) {
+				$('#1max').text(a.day1);
+                $('#2max').text(a.day2);
+                $('#3max').text(a.day3);
+				$('#4max').text(a.day4);
+				$('#5max').text(a.day5);
+				$('#6max').text(a.day6);
+				$('#7max').text(a.day7);
+			});
+			$.getJSON( "/api/mintemp", function(a) {
+				$('#1min').text(a.day1);
+                $('#2min').text(a.day2);
+                $('#3min').text(a.day3);
+				$('#4min').text(a.day4);
+				$('#5min').text(a.day5);
+				$('#6min').text(a.day6);
+				$('#7min').text(a.day7);
+			});
+			$.getJSON( "/api/condition", function(a) {			
+				var imageWeather = document.getElementsByClassName("imageWeather");
+				var hourArray = new Array(12);
+				hourArray[0] = a.hour1;
+				hourArray[1] = a.hour2;
+				hourArray[2] = a.hour3;
+				hourArray[3] = a.hour4;
+				hourArray[4] = a.hour5;
+				hourArray[5] = a.hour6;
+				hourArray[6] = a.hour7;
+				hourArray[7] = a.hour8;
+				hourArray[8] = a.hour9;
+				hourArray[9] = a.hour10;
+				hourArray[10] = a.hour11;
+				hourArray[11] = a.hour12;
+				for(i=0; i<12; i++){
+					hournext = new Date();
+					hournext = hournext.getHours();
+					hournext += i + 1;
+					if(hournext>24) hournext = hournext -24;
+					showImage(hourArray[i],imageWeather[i],hournext);
+				}
+			});
+		}, 1000);
+
+		var dateTime = new Date();
+		var hour = dateTime.getHours();
+		var setHour = "hour";
+		var i;
+		for(i=1; i<13; i++){
+			var n = i.toString();
+			var setHour2 = setHour + n;
+			var hour2 = hour + i;
+			if(hour2>23) hour2=hour2-24;
+			document.getElementById(setHour2).innerHTML = hour2+':00';
+		}
+		var dayArray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+		var day = dateTime.getDay();
+		var dayNum = [0,1,2,3,4,5,6];
+		for(i=1; i<8; i++){
+			day = day+1;
+			if(day>6) dayNum[i-1]=day-7;
+			else dayNum[i-1]=day; 
+		}
+		var setDay = "day";
+		for(i=1; i<8; i++){			
+			var n = i.toString();
+			var setDay2 = setDay + n;
+			document.getElementById(setDay2).innerHTML = dayArray[dayNum[i-1]];
+		}  	
+		function showImage(x,y,z){
+			if(x==0){
+				if(z>6 && z<=18) y.innerHTML = "<img src=\'images/0.png\'>";
+				else y.innerHTML = "<img src=\'images/0n.png\'>";
+			}
+			else if(x==1){
+				if(z>6 && z<=18) y.innerHTML = "<img src=\'images/1.png\'>";
+				else y.innerHTML = "<img src=\'images/1n.png\'>";
+			} 
+			else if(x==2) y.innerHTML = "<img src=\'images/2.png\'>";			
+		}
+		
+	</script>
+</body>
+</html>
